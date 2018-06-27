@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Integrando Conhecimento</title>
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="calculadora.css">
+  </head>
+  <body>
+    <h1 id="nome-do-site">Integrando Conhecimento</h1>
+    <header class="menu-logo">
+      <img src="imagens-do-site/oculos transparentes.png" id="logo">
+      <ul>
+        <li class="menu-principal" id="menu"><a href="index.html">menu</a></li>
+        <li class="menu-principal" id="artigos"><a href="artigos_da_pag.html">artigos</a></li>
+        <li class="menu-principal" id="exercicios"><a href="exercicios_da_pag.html">exercícios</a></li>
+        <li class="menu-principal atual" id="calculadora"><a href="calculadora.html">calculadora</a></li>
+      </ul>
+      <hr title="Retrair cabeçalho">
+    </header>
+    <main>
+      <h1>Calculadoras</h1>
+      <div id="principal">
+        <div id="fat">
+          <h2>Fatores primos e divisores</h2>
+          <div class="exterior">
+            <div class="ent">
+              <div>Insira um número inteiro entre 2 e 10<sup>15</sup></div>
+              <div class="centralizado">
+                <input type="number" min="2" max="1000000000000000"><button>Calcular</button>
+              </div>
+            </div>
+          </div>
+          <div class="exterior">
+            <div class="sai">
+              <div id="ff">
+                <strong>Forma fatorada:</strong> <span id="saida-ff"></span>
+              </div>
+              <div id="divs">
+                <strong>Divisores:</strong>
+                <div class="oculto" id="saida-divs"></div>
+                <span class="lermais">Mostrar...</span>
+              </div>
+              <div class="procedimento" id="p-divs">
+                <strong>Procedimento:</strong>
+                <table class="oculto">
+                  <tbody></tbody>
+                </table>
+                <span class="lermais">Mostrar...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="mmc-mdc">
+          <h2>MMC e MDC</h2>
+          <div class="exterior">
+            <div class="ent">
+              <div>Insira qualquer número de inteiros entre 2 e 10<sup>15</sup><br>
+              (separados por 1 espaço)</div>
+              <div class="centralizado">
+                <input class="grande" type="text"><button>Calcular</button>
+              </div>
+            </div>
+          </div>
+          <div class="exterior">
+            <div class="sai">
+              <div id="mmc">
+                <strong>MMC:</strong> <span id="saida-mmc"></span>
+                <div class="aviso oculto">
+                  <strong>Aviso:</strong> Esse resultado é maior que 10<sup>15</sup>, logo
+                  pode estar incorreto após o 16° algarismo.
+                </div>
+                <ul>
+                  <li><strong>Forma fatorada:</strong> <span id="saida-mmc-ff"></span></li>
+                </ul>
+              </div>
+              <div id="mdc">
+                <strong>MDC:</strong> <span id="saida-mdc"></span>
+                <ul>
+                  <li><strong>Forma fatorada:</strong> <span id="saida-mdc-ff"></span></li>
+                </ul>
+              </div>
+              <div class="procedimento" id="p-mmc-mdc">
+                <strong>Procedimento:</strong>
+                <table class="oculto">
+                  <tbody></tbody>
+                </table>
+                <span class="lermais">Mostrar...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="calculadora.js"></script>
+    <script src="fecha header.js"></script>
+  </body>
+</html>
